@@ -2,6 +2,8 @@
 Creates an outgoing webhook and an alert connected to that webhook
 prints ids of both to console
 
+Run with `go run ./app/main.go`
+
 ## part 3 discussion
 ### 1. api quality evaluation:
 - the api is very comprehensive and flexible
