@@ -147,6 +147,10 @@ func main() {
 	}
 
 	CORALOGIX_API_KEY = os.Getenv("CORALOGIX_API_KEY")
+	if CORALOGIX_API_KEY == "" {
+		fmt.Println("CORALOGIX_API_KEY missing or empty in .env file")
+		return
+	}
 
 	httpClient := http.Client{
 		Timeout: CORALOGIX_API_TIMEOUT,
